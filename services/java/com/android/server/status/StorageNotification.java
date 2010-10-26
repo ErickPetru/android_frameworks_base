@@ -276,7 +276,7 @@ public class StorageNotification extends StorageEventListener {
     private synchronized void setUsbStorageNotification(int titleId, int messageId, int icon,
             boolean sound, boolean visible, PendingIntent pi) {
 
-		visible = visible && UMS_NOTIFICATION_VISIBLE;
+        visible = visible && UMS_NOTIFICATION_VISIBLE;
         if (!visible && mUsbStorageNotification == null) {
             return;
         }
