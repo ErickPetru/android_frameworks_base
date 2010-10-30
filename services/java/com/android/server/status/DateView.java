@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.Slog;
 import android.widget.TextView;
@@ -68,6 +69,7 @@ public final class DateView extends TextView {
     private final void updateClock() {
         Date now = new Date();
         setText(DateFormat.getDateInstance(DateFormat.LONG).format(now));
+        setTextColor(Color.WHITE);
     }
 
     void setUpdates(boolean update) {
